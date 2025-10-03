@@ -7,7 +7,7 @@
     3. 자바의 예약어 사용 불가
     4. 특수기호는 밑줄, $ 외에 사용 불가
  */
-public class variables {
+public class Variables {
     public static void main(String[] args){
         int age;
         age = 27;

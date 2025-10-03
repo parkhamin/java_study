@@ -1,4 +1,4 @@
-public class variables_2 {
+public class Variables_2 {
     public static void main(String[] args){
         boolean myBoolean = true;
         myBoolean = false;
