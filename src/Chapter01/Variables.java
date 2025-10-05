@@ -1,3 +1,5 @@
+package Chapter01;
+
 /*
     int x;
     [자료형] [변수의 이름]

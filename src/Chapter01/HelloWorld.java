@@ -1,3 +1,5 @@
+package Chapter01;
+
 public class HelloWorld { // class HelloWorld란 HelloWorld라는 클래스를 정의,
                           // public이란 접근 제어자로 어디에서나 접근 가능
     public static void main(String[] args){ // main이란 메소드(함수)의 이름

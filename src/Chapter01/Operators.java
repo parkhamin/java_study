@@ -1,4 +1,4 @@
-import com.sun.security.jgss.GSSUtil;
+package Chapter01;
 
 public class Operators {
     public static void main(String[] args) {
@@ -30,25 +30,25 @@ public class Operators {
         System.out.println("단항 연산자");
         int myInt = 3;
         System.out.println(-myInt);
-        System.out.println(--myInt); //실제 myInt의 값을 1을 감소시키고 저장
+        System.out.println(--myInt); // 실제 myInt의 값을 1을 감소시키고 저장
         System.out.println(++myInt);
 
         System.out.println("=========================");
         System.out.println("불린 연산자");
         System.out.println("AND 연산자");
-        System.out.println(true && true);
-        System.out.println(true && false);
-        System.out.println(false && true);
-        System.out.println(false && false);
+        System.out.println(true && true); // true
+        System.out.println(true && false); // false
+        System.out.println(false && true); // false
+        System.out.println(false && false); // false
         // AND의 경우 양쪽 다 true여야만 true, 한쪽이라도 false이면 false
         System.out.println("OR 연산자");
-        System.out.println(true || true);
-        System.out.println(true || false);
-        System.out.println(false || true);
-        System.out.println(false || false);
+        System.out.println(true || true); // true
+        System.out.println(true || false); // true
+        System.out.println(false || true); // true
+        System.out.println(false || false); // false
         // OR의 경우 양쪽 다 false여만 false, 한쪽이라도 true라도 true
         System.out.println("NOT 연산자");
-        System.out.println(!true);
-        System.out.println(!false);
+        System.out.println(!true); // false
+        System.out.println(!false); // true
     }
 }

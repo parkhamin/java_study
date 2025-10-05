@@ -1,4 +1,6 @@
-public class TypeConversionCasting_2 {
+package Chapter01;
+
+public class TypeConversionCasting_Ex {
     public static void main(String[] args){
         // 각 과목 점수
         int koreanScore = 86;
