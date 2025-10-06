@@ -26,10 +26,15 @@ public class BankDriver {
         p2.setAccount(a2);
         a2.setOwner(p2);
 
-        System.out.println(a2.deposit(30000));
+        a2.transfer(a1, 200000);
+        a1.transfer(p2, 150000);
+        p2.transfer(a1, 270000);
+        p1.transfer(p2, 130000);
+
+        /*System.out.println(a2.deposit(30000));
         System.out.println(a2.withdraw(170000));
         System.out.println(a2.deposit(620000));
-        System.out.println(a2.withdraw(890000));
+        System.out.println(a2.withdraw(890000));*/
 
         // 테스트
         /*System.out.println(p1.name);

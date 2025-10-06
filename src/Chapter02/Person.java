@@ -43,4 +43,24 @@ public class Person {
     public BankAccount getAccount(){
         return account;
     }
+
+    // 계좌이체 메소드
+    // 첫번째 파라미터: 받는 사람 (Person)
+    // 두번째 파라미터: 이체할 금액 (정수)
+    // 리턴: 성공여부 (불린)
+    boolean transfer(Person to, int amount){
+        return transfer(to.getAccount(), amount);
+    }
+
+    boolean transfer(BankAccount to, int amount){
+        if (amount>= 0 && amount <= getAccount().getBalance()){
+            getAccount().setBalance(getAccount().getBalance() - amount);
+            to.setBalance(to.getBalance()+amount);
+            System.out.println("true - from: " + getName() + ", to: " + to.getOwner().getName() + ", amount: " + amount + ", balance: " + getAccount().getBalance());
+            return true;
+        } else{
+            System.out.println("false - from: " + getName() + ", to: " + to.getOwner().getName() + ", amount: " + amount + ", balance: " + getAccount().getBalance());
+            return false;
+        }
+    }
 }
