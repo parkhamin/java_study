@@ -8,6 +8,27 @@ public class Person {
     private int cashAmount; // 소유 계좌
     private BankAccount account;
 
+    public Person(String pName, int pAge, int pCashAmount){
+        name = pName;
+        if(pAge < 0){
+            age = 12;
+        }else age = pAge;
+
+        if(pCashAmount < 0){
+            cashAmount = 0;
+        }else {
+            cashAmount = pCashAmount;
+        }
+    }
+
+    public Person(String pName, int pAge){
+        name = pName;
+        cashAmount = 0;
+        if(pAge < 0){
+            age = 12;
+        }
+    }
+
     public void setAge(int newAge){
         if (newAge >= 0){
             age = newAge;
