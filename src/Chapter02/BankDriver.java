@@ -10,6 +10,8 @@ public class BankDriver {
 
         Person p1 = new Person("김신의", 28);
         p1.setCashAmount(30000);
+        //System.out.println(p1.getName());
+
         // 은행 계좌 생성
         BankAccount a1 = new BankAccount(p1);
         a1.setBalance(100000);

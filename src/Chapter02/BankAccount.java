@@ -4,36 +4,36 @@ public class BankAccount {
     private int balance; // 잔액
     private Person owner; // 소유주
 
-    public BankAccount(int pBalance){
-        if(pBalance < 0){
-            balance = 0;
-        }else balance = pBalance;
+    public BankAccount(int balance){
+        if(balance < 0){
+            this.balance = 0;
+        }else this.balance = balance;
     }
 
-    public BankAccount(Person pOwner){
-        owner = pOwner;
-        balance = 0;
+    public BankAccount(Person owner){
+        this.owner = owner;
+        this.balance = 0;
     }
 
-    public BankAccount(int pBalance, Person pOwner){
-        if(pBalance < 0){
-            balance = 0;
+    public BankAccount(int balance, Person owner){
+        if(balance < 0){
+            this.balance = 0;
         } else{
-            balance = pBalance;
-            owner = pOwner;
+            this.balance = balance;
+            this.owner = owner;
         }
     }
 
-    public void setBalance(int newBalance){
-        balance = newBalance;
+    public void setBalance(int balance){
+        this.balance = balance;
     }
 
     public int getBalance(){
         return balance;
     }
 
-    public void setOwner(Person newOwner){
-        owner = newOwner;
+    public void setOwner(Person owner){
+        this.owner = owner;
     }
 
     public Person getOwner(){
